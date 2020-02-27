@@ -9,6 +9,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ProductosComponent } from './productos/productos.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
+import { CarroComponent } from './carro/carro.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { OfertasComponent } from './ofertas/ofertas.component';
     NosotrosComponent,
     ClientesComponent,
     ProductosComponent,
-    OfertasComponent
+    OfertasComponent,
+    CarroComponent
   ],
   imports: [
     BrowserModule,

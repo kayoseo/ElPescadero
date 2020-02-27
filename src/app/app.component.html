@@ -28,7 +28,7 @@
   <!-- Toolbar -->
   <header id="header">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="#">El Pescadero</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +46,8 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/clientes">Clientes</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Productos</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="http://www.google.com">Google</a>
-              <a class="dropdown-item" href="http://www.bing.com">Bing</a>
-              <a class="dropdown-item" href="http://www.yahoo.com">Yahoo</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="dropdown" routerLink="/productos">Productos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/ofertas">Ofertas</a>
