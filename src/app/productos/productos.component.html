@@ -3,16 +3,17 @@
     <div class="col-2" style="border:1px solid lightgray;">
       <!-- <app-sidebar></app-sidebar> -->
     </div> 
-    <div class="col-8" style="border:1px solid lightgray;">
+    <div class="col-8" style="border:1px solid ">
       <div class="card-deck"  >
-        <div class="card" *ngFor="let producto of productos">
+        <div class="card" style="background-color:#F5F5F5 " *ngFor="let producto of productos">
+          <h5 class="card-title">{{producto.nombre}}</h5>
           <img class="card-img-top d-sm-inline" src={{producto.imagen}} alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">{{producto.nombre}}</h5>
-            <p class="card-text">{{producto.descripcion}}</p>
+            <p class="card-text" style="min-height: 50px;">{{producto.descripcion}}</p>
+            <small class="texto-precio" >$  {{producto.precio}} </small>
           </div>
           <div class="card-footer">
-            <small class="text-muted">{{producto.precio}} <button (click)="AgregarAlCarro(producto)">Agregar al carro</button></small>
+            <button (click)="AgregarAlCarro(producto)">Agregar al carro</button>
           </div>
         </div>
       </div>
@@ -21,3 +22,6 @@
       <app-carro></app-carro>
     </div>
   </div>
+
+ 
+        

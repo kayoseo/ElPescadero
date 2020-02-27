@@ -1,0 +1,12 @@
+.card{
+    margin: 2px auto;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.tex-box{
+    margin: 2px auto;
+        text-align: center;
+}
+h4, p{
+    text-align: center;
+}
